@@ -1,0 +1,158 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+.intro {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.intro h2 {
+    margin-bottom: 10px;
+}
+
+.intro p {
+    margin-bottom: 20px;
+}
+
+.intro img {
+    display: block;
+    margin: 0 auto;
+    width: 200%; /* Adjust the width as needed */
+    max-width: 800px; /* Limit the maximum width */
+    height: auto;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    position: relative;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px;
+    display: block;
+    transition: background-color 0.3s;
+}
+
+nav ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #333;
+    border-top: 2px solid #555;
+}
+
+nav ul ul li {
+    display: block;
+}
+
+nav ul ul li a {
+    padding: 8px;
+    transition: background-color 0.3s;
+}
+
+nav ul ul li:hover > a {
+    background-color: #555;
+}
+
+nav ul li:hover ul {
+    display: block;
+}
+
+nav ul li:hover > a {
+    background-color: #555;
+}
+
+nav ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #333;
+    border-top: 2px solid #555;
+}
+
+nav ul ul li {
+    display: block;
+}
+
+nav ul ul li a {
+    padding: 8px;
+    transition: background-color 0.3s;
+}
+
+nav ul ul li:hover > a {
+    background-color: #555;
+}
+
+nav ul li:hover ul {
+    display: block;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+/* Specific Styles */
+.code-box,
+.output-box {
+    border: 1px solid #ccc;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #f9f9f9;
+}
+
+.code-box h4,
+.output-box h4 {
+    margin-top: 0;
+}
+
+.output-box p {
+    margin: 0;
+}
+
+.output-box table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.output-box th,
+.output-box td {
+    padding: 8px;
+    border: 1px solid #ccc;
+}
+
+.output-box th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}

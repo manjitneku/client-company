@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programming Paradigms Portal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Programming Paradigms Portal</h1>
+        <nav>
+            <ul>
+                <li><a href="#declarative">Declarative Programming</a>
+                    <ul>
+                        <li><a href="#logic">Logic Programming</a></li>
+                        <li><a href="#functional">Functional Programming</a></li>
+                        <li><a href="#database">Database Programming</a></li>
+                    </ul>
+                </li>
+                
+                <li><a href="#imperative">Imperative Programming</a>
+                    <ul>
+                        <li><a href="#procedural">Procedural Programming</a></li>
+                        <li><a href="#oop">Object-Oriented Programming (OOP)</a></li>
+                        <li><a href="#parallel">Parallel Processing</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        
+    </header>
+    <main>
+        <div class="intro">
+            <h2>About Programming Paradigms</h2>
+            <p>Programming paradigms are fundamental styles of computer programming. They dictate the structure, design, and execution of computer programs. Different paradigms emphasize different concepts and approaches to problem-solving. Understanding various programming paradigms helps programmers choose the most suitable approach for a particular problem.</p>
+            <img src="https://media.geeksforgeeks.org/wp-content/uploads/1-344.png" alt="Programming Paradigms" width="400">
+        </div>
+        
+        <section id="declarative">
+            <h2>Declarative Programming</h2>
+            <section id="logic">
+            <h3>Logic Programming</h3>
+            <p>Logic programming is a declarative programming paradigm that emphasizes the use of formal logic to express programs. In logic programming, programs are written in the form of logical rules and facts, and computation is performed by applying logical inference rules to derive solutions.</p>
+            <h3>Advantages:</h3>
+            <ul>
+                <li>Declarative representation of problem-solving logic.</li>
+                <li>Automatic handling of control flow and backtracking by the inference engine.</li>
+                <li>Well-suited for applications involving symbolic computation and knowledge representation.</li>
+            </ul>
+            <h3>Disadvantages:</h3>
+            <ul>
+                <li>Complexity in expressing certain types of algorithms and procedural tasks.</li>
+                <li>Performance overhead associated with backtracking and search algorithms.</li>
+                <li>Difficulty in debugging and tracing execution flow due to implicit control.</li>
+            </ul>
+                <div class="code-box">
+                    <h4>Example Code:</h4>
+                    <pre><code>% Example of Logic Programming (Prolog)
+% Define parent-child relationships
+parent(john, mary).
+parent(john, lisa).
+parent(jane, mary).
+parent(jane, lisa).
+
+% Define rules for grandparent
+grandparent(X, Z) :- parent(X, Y), parent(Y, Z).
+
+% Query: Who are the grandparents of Mary?
+?- grandparent(X, mary).
+</code></pre>
+                </div>
+                <div class="output-box">
+                    <h4>Example Output:</h4>
+                    <p>X = john ; X = jane.</p>
+                </div>
+            </section>
+            </section>
+            <section id="functional">
+                <h3>Functional Programming</h3>
+            <p>Functional programming is a declarative programming paradigm that treats computation as the evaluation of mathematical functions. In functional programming, programs are composed of pure functions that produce deterministic outputs based solely on their inputs, without side effects or mutable state.</p>
+            <h3>Advantages:</h3>
+            <ul>
+                <li>Emphasis on immutability and referential transparency for easier reasoning and testing.</li>
+                <li>Facilitates parallel and concurrent programming through higher-order functions and immutable data structures.</li>
+                <li>Support for higher-order functions, lambda expressions, and function composition.</li>
+            </ul>
+            <h3>Disadvantages:</h3>
+            <ul>
+                <li>Learning curve for developers unfamiliar with functional concepts and syntax.</li>
+                <li>Performance overhead associated with function invocation and recursion.</li>
+                <li>Difficulty in modeling certain types of stateful or imperative algorithms.</li>
+            </ul>
+                <div class="code-box">
+                    <h4>Example Code:</h4>
+                    <pre><code>// Example of Functional Programming (JavaScript)
+// Define a higher-order function to calculate factorial
+const factorial = n => (n === 0 ? 1 : n * factorial(n - 1));
+
+// Calculate factorial of 5
+console.log(factorial(5)); 
+</code></pre>
+                </div>
+                <div class="output-box">
+                    <h4>Example Output:</h4>
+                    <p>Output: 120</p>
+                </div>
+            </section>
+            <section id="database">
+                <h3>Database Programming</h3>
+            <p>Database programming is a declarative programming paradigm that focuses on querying and manipulating data stored in databases. In database programming, programs are written in the form of declarative queries using query languages such as SQL (Structured Query Language).</p>
+            <h3>Advantages:</h3>
+            <ul>
+                <li>Declarative querying and manipulation of relational data using SQL.</li>
+                <li>Support for data integrity constraints, transactions, and concurrent access control.</li>
+                <li>Efficient indexing and optimization techniques for improving query performance.</li>
+            </ul>
+            <h3>Disadvantages:</h3>
+            <ul>
+                <li>Complexity in modeling and querying complex data relationships and hierarchical structures.</li>
+                <li>Performance bottlenecks associated with large datasets and inefficient query execution plans.</li>
+                <li>Vendor-specific dialects and non-standard extensions may limit portability and interoperability.</li>
+            </ul>
+                <div class="code-box">
+                    <h4>Example Code:</h4>
+                    <pre><code>-- Example of Database Programming (SQL)
+-- Create a table for storing employee information
+CREATE TABLE Employees (
+    EmployeeID INT PRIMARY KEY,
+    FirstName VARCHAR(50),
+    LastName VARCHAR(50),
+    Department VARCHAR(50)
+);
+
+-- Insert data into the Employees table
+INSERT INTO Employees (EmployeeID, FirstName, LastName, Department)
+VALUES (1, 'John', 'Doe', 'IT'),
+       (2, 'Jane', 'Smith', 'HR'),
+       (3, 'Alice', 'Johnson', 'Finance');
+
+-- Query: Retrieve all employees from the IT department
+SELECT * FROM Employees WHERE Department = 'IT';
+
+</code></pre>
+                </div>
+                <div class="output-box">
+                    <h4>Example Output:</h4>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>EmployeeID</th>
+                                <th>FirstName</th>
+                                <th>LastName</th>
+                                <th>Department</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>John</td>
+                                <td>Doe</td>
+                                <td>IT</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </section>
+        <section id="imperative">
+            <h2>Imperative Programming</h2>
+            <section id="procedural">
+            <h3>Procedural Programming</h3>
+            <p>Procedural programming is a programming paradigm based on the concept of procedures, or routines, that perform computations or tasks. In procedural programming, the focus is on defining step-by-step instructions to solve a problem, with an emphasis on procedural abstraction and modularization.</p>
+            <h3>Advantages:</h3>
+            <ul>
+                <li>Clear and straightforward representation of algorithms.</li>
+                <li>Well-suited for tasks requiring sequence control and iterative processing.</li>
+                <li>Easier to understand for developers with structured programming experience.</li>
+            </ul>
+            <h3>Disadvantages:</h3>
+            <ul>
+                <li>May lead to code duplication and reduced maintainability.</li>
+                <li>Difficulty in managing state and data dependencies in large-scale applications.</li>
+                <li>Limited support for code reuse and encapsulation compared to OOP.</li>
+            </ul>
+                <div class="code-box">
+                    <h4>Example Code:</h4>
+                    <pre><code>// Example of Procedural Programming (JavaScript)
+let sum = 0;
+const numbers = [1, 2, 3, 4, 5];
+for (let i = 0; i &lt; numbers.length; i++) {
+    sum += numbers[i];
+}
+console.log(sum); 
+</code></pre>
+                </div>
+                <div class="output-box">
+                    <h4>Example Output:</h4>
+                    <p>Output: 15</p>
+                </div>
+            </section>
+        </section>
+            <section id="oop">
+                <h3>Object-Oriented Programming (OOP)</h3>
+            <p>Object-oriented programming (OOP) is a programming paradigm based on the concept of "objects," which can contain data and code. OOP emphasizes the organization of software systems around objects and classes, promoting concepts such as encapsulation, inheritance, and polymorphism.</p>
+            <h3>Advantages:</h3>
+            <ul>
+                <li>Enhanced modularity and code reuse through class-based abstraction.</li>
+                <li>Improved maintainability and scalability of software systems.</li>
+                <li>Support for modeling real-world entities and relationships.</li>
+            </ul>
+            <h3>Disadvantages:</h3>
+            <ul>
+                <li>Complexity and overhead associated with class hierarchies and inheritance.</li>
+                <li>Potential for tight coupling between classes leading to rigidity and brittleness.</li>
+                <li>Overuse of inheritance may lead to the "fragile base class" problem.</li>
+            </ul>
+                <div class="code-box">
+                    <h4>Example Code:</h4>
+                    <pre><code>// Example of Object-Oriented Programming (OOP) (JavaScript)
+class Circle {
+    constructor(radius) {
+        this.radius = radius;
+    }
+    
+    calculateArea() {
+        return Math.PI * this.radius ** 2;
+    }
+}
+
+const circle = new Circle(5);
+console.log(circle.calculateArea()); 
+</code></pre>
+                </div>
+                <div class="output-box">
+                    <h4>Example Output:</h4>
+                    <p>Output: 78.54</p>
+                </div>
+            </section>
+            <section id="parallel">
+                <h3>Parallel Processing</h3>
+            <p>Parallel processing is a programming paradigm that involves executing multiple computational tasks simultaneously. It aims to improve performance and efficiency by leveraging multiple processing units or cores to execute tasks concurrently.</p>
+            <h3>Advantages:</h3>
+            <ul>
+                <li>Increased computational speed and throughput for parallelizable tasks.</li>
+                <li>Efficient utilization of multicore processors and distributed computing resources.</li>
+                <li>Scalability to handle large-scale data processing and computational workloads.</li>
+            </ul>
+            <h3>Disadvantages:</h3>
+            <ul>
+                <li>Complexity in managing synchronization and communication between parallel tasks.</li>
+                <li>Potential for race conditions, deadlocks, and other concurrency-related bugs.</li>
+                <li>Difficulty in debugging and diagnosing performance issues in parallelized code.</li>
+            </ul>
+                <div class="code-box">
+                    <h4>Example Code:</h4>
+                    <pre><code>// Example of Parallel Processing (JavaScript - using Web Workers)
+const worker = new Worker('worker.js');
+worker.postMessage({ start: 1, end: 1000000 });
+worker.onmessage = function(event) {
+    console.log(event.data); 
+};
+</code></pre>
+                </div>
+                <div class="output-box">
+                    <h4>Example Output:</h4>
+                    <p>Sum of numbers from 1 to 1000000</p>
+                </div>
+            </section>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Programming Paradigms Portal</p>
+    </footer>
+</body>
+</html>
