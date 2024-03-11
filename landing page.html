@@ -1,63 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>HelloFresh Chef's Table</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HelloFresh Landing Page</title>
+    <link rel="stylesheet" href="landing-page-style.css">
 </head>
 <body>
-  <header>
-    <nav>
-      <div class="container">
-        <a href="#" class="logo">
-            <img src="https://cdn.hellofresh.com/logo/Hello_Fresh_Lockup.png" alt="HelloFresh Logo">
-          </a>
-        <ul class="nav-links">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Subscription</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </div>
-    </nav>
-    <div class="hero">
-      <div class="container">
-        <h1>Welcome to HelloFresh Chef's Table</h1>
-        <p>Experience gourmet dining like never before.</p>
-        <a href="#" class="btn">Subscribe Now</a>
-      </div>
-    </div>
-  </header>
-  <main>
-    <section class="vision">
-      <div class="container">
-        <h2>Vision</h2>
-        <p>HelloFresh is changing the way people eat, forever. We deliver fresh, high-quality ingredients straight to your doorstep, making gourmet dining accessible to all.</p>
-      </div>
-    </section>
-    <section class="branding">
-      <div class="container">
-        <h2>Branding</h2>
-        <p>Experience freshness, taste, and sustainability with HelloFresh's vibrant logo, color schemes, and messaging. Our commitment to quality and health shines through in every meal.</p>
-      </div>
-    </section>
-    <section class="features">
-      <div class="container">
-        <h2>Key Features</h2>
-        <ul>
-          <li>Customizable meal kits with pre-portioned ingredients and easy-to-follow recipes.</li>
-          <li>High-quality, farm-fresh ingredients sourced directly from trusted suppliers.</li>
-          <li>Flexible meal plans catering to various dietary requirements and lifestyle choices, including vegetarian, vegan, and specialty diets.</li>
-          <li>Sustainability focus, reducing carbon emissions and food waste.</li>
-        </ul>
-      </div>
-    </section>
-  </main>
-  <footer>
+
+    <header>
+        <div class="logo">
+            <a href="#">
+                <img src="https://cdn.freebiesupply.com/logos/large/2x/hellofresh-logo-png-transparent.png" alt="HelloFresh Logo">
+            </a>
+        </div>
+        <nav class="nav-links">
+            <ul>
+                <li><a href="#cta" onclick="togglePopup()">Sign Up</a></li>
+                <li><a href="https://www.hellofresh.ca/">Home</a></li>
+                <li><a href="#features">Features</a></li>
+            </ul>
+        </nav>
+    </header>
+
+<section id="about" class="about">
     <div class="container">
-      <p>&copy; 2024 HelloFresh. All rights reserved.</p>
+        <h1 class="main-heading typing-text"></h1>
+        <div class="about-content">
+            <h2>About HelloFresh Chef's Table Experience</h2>
+            <p class="about-paragraph">Indulge in an unforgettable culinary journey with HelloFresh Chef's Table Experience Subscription. Discover exclusive menus curated by our renowned chefs and elevate your dining experience.</p>
+            <p>Join us for live cooking demonstrations and gain insider tips and techniques straight from the experts. Explore behind-the-scenes content and uncover the stories behind each dish, enriching your appreciation for the culinary arts.</p>
+        </div>
     </div>
-  </footer>
+</section>
+
+<<section id="main-service" class="main-service">
+    <div class="container">
+        <h2>Chef's Table Experience</h2>
+        <div class="feature-list">
+            <div class="feature">
+                <img src="public/chef.jpeg" alt="Chef's Table Icon" class="feature-icon">
+                <h3>Chef's Table Experience</h3>
+                <p>Indulge in an unforgettable culinary journey with HelloFresh Chef's Table Experience Subscription. Discover exclusive menus curated by our renowned chefs and elevate your dining experience.</p>
+                <p>Explore the world of gourmet dining with our Chef's Table Experience Subscription. Each month, our team of expert chefs crafts a unique menu inspired by the finest ingredients and culinary traditions from around the globe.</p>
+            
+                <p>Immerse yourself in the culinary world with behind-the-scenes content, including chef interviews, kitchen tours, and the fascinating stories behind each dish. Our Chef's Table Experience Subscription offers a glimpse into the creativity and passion that goes into every meal.</p>
+                <p>Elevate your dining experience and embark on a culinary journey like no other. Sign up for our Chef's Table Experience Subscription today!</p>
+            </div>
+            <div class="feature">
+                <img src="public/live.jpeg" alt="Live cooking demonstrations" class="feature-icon">
+                <h3>Live Cooking Demonstrations</h3>
+                <p>Join us for live cooking demonstrations and gain insider tips and techniques straight from the experts. Explore behind-the-scenes content and uncover the stories behind each dish, enriching your appreciation for the culinary arts.</p>
+                <p>Don't miss out on this unique opportunity to elevate your dining experience. Sign up for our Chef's Table Experience Subscription today!</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section id="features" class="features">
+    <div class="container">
+        <h2>Key Features</h2>
+        <div class="feature-list">
+            <div class="feature">
+                <img src="public/Meal Kit.jpeg" alt="Meal Kit Icon" class="feature-icon">
+                <h3>Customizable Meal Kits</h3>
+                <p>Enjoy hassle-free cooking with pre-portioned ingredients and easy-to-follow recipes tailored to your preferences.</p>
+            </div>
+            <div class="feature">
+                <img src="public/Ingredients.jpg" alt="Ingredients Icon" class="feature-icon">
+                <h3>Fresh Ingredients</h3>
+                <p>Discover the freshest produce sourced directly from farms and suppliers, ensuring quality and taste in every dish.</p>
+            </div>
+            <div class="feature">
+                <img src="public/Dietary Options.jpeg" alt="Dietary Options Icon" class="feature-icon">
+                <h3>Flexible Meal Plans</h3>
+                <p>Choose from a variety of meal options to suit your dietary needs and lifestyle, including vegetarian, vegan, and more.</p>
+            </div>
+            <div class="feature">
+                <img src="public/Sustainability.jpeg" alt="Sustainability Icon" class="feature-icon">
+                <h3>Sustainability</h3>
+                <p>Join us in reducing carbon emissions and food waste while enjoying guilt-free meals that are good for you and the planet.</p>
+            </div>
+            
+            
+        </div>
+    </div>
+</section>
+
+<section id="cta" class="cta">
+    <div class="container">
+        <h2>Ready to Embark on a Culinary Journey?</h2>
+        <p>Join our Chef's Table Experience Subscription today and elevate your dining experience with exclusive menus, live cooking demonstrations, and behind-the-scenes content.</p>
+        <button href="#" class="btn-lg" onclick="togglePopup()">Sign Up Now</button>
+        <div id="popup" class="popup-form">
+            <input type="text" id="name" placeholder="Enter your name">
+            <input type="email" id="email" placeholder="Enter your email">
+            <button onclick="submitForm()">Submit</button>
+        </div>
+    </div>
+</section>
+
+
+
+
+<footer class="footer">
+    <div class="container">
+        <p>© 2024 HelloFresh. All Rights Reserved</p>
+    </div>
+</footer>
+
+<script src="landing-page-script.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+
+</script>
 </body>
 </html>

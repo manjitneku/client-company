@@ -1,0 +1,222 @@
+/* Body Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('public/About.jpeg');
+    background-size: cover;
+    background-position: center;
+    color: #fff; /* Adjust text color */
+    margin: 0;
+    padding: 0;
+    background-attachment: fixed; /* Background image remains fixed as content scrolls */
+    position: relative; /* Added position relative for z-index */
+}
+
+/* Background Overlay */
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust background color and opacity */
+    z-index: -1;
+}
+
+/* Content Styles */
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    position: relative; /* Added position relative for z-index */
+    z-index: 1; /* Ensure content is above background overlay */
+}
+
+/* Header Styles */
+header {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px 40px; /* Adjust padding as needed */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    max-width: 100px;
+}
+
+.nav-links ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Display navigation links as flex items */
+}
+
+.nav-links ul li {
+    margin-right: 20px;
+}
+
+.nav-links ul li a {
+    text-decoration: none;
+    color: #fcfbfb; /* Change link color */
+    font-weight: bold;
+}
+
+.nav-links ul li a:hover {
+    color: rgb(251, 251, 251); /* Change link color on hover */
+}
+
+
+
+/* About Section Styles */
+.about {
+    padding: 100px 0; /* Adjust padding as needed */
+    text-align: center;
+}
+
+.main-heading {
+    font-size: 48px; /* Adjust font size as needed */
+    font-weight: bold;
+    margin-bottom: 50px; /* Adjust margin as needed */
+}
+
+.about-content {
+    background-color: rgba(0, 0, 0, 0.6); /* Adjust background color and opacity as needed */
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.about-content h2 {
+    color: #fff; /* Adjust text color */
+}
+
+.about-content p {
+    color: #ccc; /* Adjust text color */
+}
+
+
+/* Main Service Section Styles */
+/* Main Service Section Styles */
+.main-service {
+    padding: 50px 0; /* Adjust padding as needed */
+    background-color: rgba(0, 0, 0, 0.8); /* Adjust background color and opacity as needed */
+    text-align: center;
+}
+
+.main-service .container {
+    max-width: 90%; /* Adjust max-width as needed */
+    margin: 0 auto; /* Center the container */
+    padding: 0 20px; /* Add padding to the sides */
+    box-sizing: border-box; /* Include padding in the total width */
+}
+
+.main-service h2 {
+    color: #fff; /* Adjust text color */
+}
+
+.main-service .feature {
+    margin-top: 30px; /* Adjust top margin as needed */
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.main-service .feature h3 {
+    color: #333; /* Adjust text color */
+}
+
+.main-service .feature p {
+    color: #666; /* Adjust text color */
+}
+
+
+
+/* Feature Section Styles */
+.features {
+    background-color: rgba(0, 0, 0, 0.8); /* Adjust background color and opacity as needed */
+    padding: 50px 0;
+}
+
+.feature-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.feature {
+    width: calc(45% - 20px); /* Adjusted width */
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+}
+
+.feature h3 {
+    color: #333;
+}
+
+.feature p {
+    color: #666;
+}
+
+.feature-icon {
+    display: block;
+    margin: 0 auto 10px;
+    max-width: 100%;
+    height: auto;
+}
+
+/* CTA Section Styles */
+.cta {
+    background-color: rgba(0, 0, 0, 0.6); /* Adjust background color and opacity as needed */
+    padding: 50px 0;
+    text-align: center;
+}
+
+.cta h2 {
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.cta p {
+    color: #ccc;
+    margin-bottom: 30px;
+}
+
+.btn-lg {
+    background-color: #ff5722;
+    color: #fff;
+    border: none;
+    padding: 15px 40px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-lg:hover {
+    background-color: #e64a19;
+}
+
+.popup-form {
+    display: none;
+    margin-top: 20px;
+}
+
+.popup-form input,
+.popup-form button {
+    padding: 10px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust background color and opacity as needed */
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
